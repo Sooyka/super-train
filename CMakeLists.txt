@@ -13,7 +13,6 @@ project (super-train)
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
     src/super-train.cpp
-    src/main.cpp
 )
 
 # Add an executable with the above sources

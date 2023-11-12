@@ -6,9 +6,8 @@ cmake_minimum_required(VERSION 3.5)
 # Set the project name
 project (super-train)
 
-# find_package(Eigen3 REQUIRED)
 
-# find_package(spdlog REQUIRED)
+find_package(Broccoli REQUIRED)
 
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
@@ -20,9 +19,7 @@ add_executable(super-train ${SOURCES})
 
 # add_subdirectory(Flake_1)
 
-# target_link_libraries(super-train PUBLIC spdlog::spdlog  Eigen3::Eigen Flake_1)
-
-target_link_libraries(super-train)
+target_link_libraries(super-train PRIVATE sturdy-broccoli)
 
 # include_directories(${SPDLOG_INCLUDE_DIR})
 
@@ -41,3 +38,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include )
 #         ${PROJECT_SOURCE_DIR}/include
 # )
 
+install(TARGETS super-train
+    LIBRARY DESTINATION bin
+    ARCHIVE DESTINATION bin
+)

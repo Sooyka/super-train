@@ -16,7 +16,7 @@
     };
   in {
     packages.default = pkgs.stdenv.mkDerivation rec {
-      pname = "train";
+      pname = "super-train";
       version = "0.1.0";
       
       src = ./.;

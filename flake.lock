@@ -6,11 +6,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1699802574,
-        "narHash": "sha256-dK/QwkyruVVhTBVWBwFov7GQjdTauXVyieQDMiSaGPw=",
+        "lastModified": 1699803500,
+        "narHash": "sha256-xXVyGKfANHes5MThEYRE6a7A6lFBn4GuXx6KRpotkLo=",
         "owner": "Sooyka",
         "repo": "sturdy-broccoli",
-        "rev": "d0e06358cb1c39da8f1a4c37611392fec128bbda",
+        "rev": "0e33b3b8328fd203ebed8ccc9ea8456aa8f280b5",
         "type": "github"
       },
       "original": {

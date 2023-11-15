@@ -8,6 +8,8 @@ project (super-train)
 
 
 find_package(Broccoli REQUIRED)
+include(BroccoliModule)
+
 
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES

@@ -22,7 +22,9 @@
       src = ./.;
 
       nativeBuildInputs = [ pkgs.cmake ];
-      buildInputs = [ broccoli.packages.${system}.default ];
+      buildInputs = [
+        broccoli.packages.${system}.default
+      ];
 
       cmakeFlags = [
         "-DENABLE_TESTING=OFF"
